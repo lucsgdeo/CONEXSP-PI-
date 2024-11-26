@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/agendamento.css">
+    <link href="css/calendario.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <header class="navbar1">
+        <a href="index.html" style="width: 20%; display: flex; flex-direction: row; align-items: center; gap: 3%;">
+            <img src="img/gota edit.png" style="width: 100%;" alt="logo">
+        </a>
+
+        <div style="display: flex; flex-direction: row-reverse; width: 60%;">
+            <a href="Apoiadores.html" style="border-style: none solid none solid;" class="botoes_nav">Apoiadores</a>
+            <a href="Contatos.html" class="botoes_nav">Suporte</a>
+            <a href="Mitos.html" class="botoes_nav">Mitos</a>
+            <a href="Triagem.html" class="botoes_nav">Agendar</a>
+        </div>
+        
+        <div style="width: 10%; display: flex; flex-direction: row-reverse;">
+            <a style="display: flex; align-items: center;" href="Cadastro.html" id="icone">
+                <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main style="margin-top: 3%;" class="principal">
+        <!--CALENDARIO-->
+        <div style="width: 45%; padding: 3%; align-items: center; justify-content: center; text-align: center;">
+            <h1>Agende sua doação</h1>
+            <div class="lado_esquerdo">
+                <div id="calendario">
+                    <div id="header">
+                    <div style="width: 100%; display: flex; gap: 1%; align-self: center; justify-content: center;">
+                        <button style="transform: rotateZ(90deg)" id="backButton"><i class="fa-solid fa-angle-down"></i></button>
+                        <div style="text-align: center; width: 50%; vertical-align: middle; line-height: 75px; " id="monthDisplay"></div>
+                        <button style="transform: rotateZ(-90deg);" id="nextButton"><i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                        
+                    </div>
+            
+                    <div id="weekdays">
+                        <div>DOM</div>
+                        <div>SEG</div>
+                        <div>TER</div>
+                        <div>QUAR</div>
+                        <div>QUI</div>
+                        <div>SEX</div>
+                        <div>SAB</div>
+                    </div>
+            
+            
+                    <!-- div dinamic -->
+                    <div id="calendar" ></div>
+            
+                
+                </div>
+                <div style="display: flex; flex-direction: column;" class="conjunto_botoes">
+                    <button onclick="alerta()">09:00</button>
+                    <button onclick="alerta()">10:00</button>
+                    <button onclick="alerta()">11:00</button>
+                    <button onclick="alerta()">12:00</button>
+                    <button onclick="alerta()">13:00</button>
+                    <button onclick="alerta()">14:00</button>
+                    <button onclick="alerta()">15:00</button>
+                </div>
+            </div>
+            
+        
+            <div id="newEventModal">
+                <h2>Nova Doacao</h2>
+            
+                <input id="eventTitleInput" placeholder="Event Title"/>
+            
+                <button id="saveButton"> Salvar</button>
+                <button id="cancelButton">Cancelar</button>
+            </div>
+        
+            <div id="deleteEventModal">
+                <h2>Evento</h2>
+            
+                <div id="eventText"></div><br>
+            
+            
+                <button id="deleteButton">Deletar</button>
+                <button id="closeButton">Fechar</button>
+            </div>
+        
+            <div id="modalBackDrop"></div>
+        </div>
+
+        <hr style="margin-top: 5%; margin-bottom: 5%;">
+
+        <div style="width: 50%; padding: 3%; text-align: center;">
+            <h1>Encontre os pontos de coleta mais próximos</h1>
+            <div style="margin-bottom: -3%; align-self: center;" class="quadrado">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7306.271698989194!2d-46.6115275085995!3d-23.706842295116502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d3a66c9d42b%3A0x71b33b4637e2799c!2sHospital%20Estadual%20de%20Diadema!5e0!3m2!1spt-BR!2sbr!4v1718237893807!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+              
+             
+        </div>
+    </main>
+
+    <script src="./scripts/main.js"></script>
+    <script>
+        function alerta(){
+            alert("Doação marcada com sucesso!");
+            window.location.replace("Historico.html");
+        }
+    </script>
+
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+</html>

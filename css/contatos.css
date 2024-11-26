@@ -1,0 +1,76 @@
+.principal_contatos{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 7%;
+    gap: 3%;
+}
+
+.area_contatos{
+    width: 45%; 
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.card_contatos{
+    width: 90%;
+    gap: 3%;
+    padding: 3%;
+    margin: 1%;
+    align-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: #ffffff; 
+    border-radius: 21px; 
+    box-shadow: 0px 3px 7px #00000040;
+}
+.card_contatos i{
+    margin: 2.5%;
+    font-size: 300%;
+    color: #BB2029;
+}
+
+.faq{
+    width: 55%;
+    margin-top: 5%;
+    padding: 2%;
+}
+.faq button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+    color: #BB2029;
+    font-size: 150%;
+    font-weight: 700;
+    padding: 1%;
+    font-family: "Roboto-Bold", Helvetica;
+}
+.faq i{
+    font-size: 125%;
+}
+.faq .card-header{
+    background-color: #ffffff;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
+.faq .card-body{
+    border-width: 1px;
+    border-color: #284F60;
+    
+}
+.faq .card{
+    border-style: none;
+    color: #284F60;
+}

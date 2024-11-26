@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem virtual</title>
+    <link rel="stylesheet" href="css/triagem.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <header style="margin-top: -10%;" class="navbar1">
+        <a href="index.html" style="width: 20%; display: flex; flex-direction: row; align-items: center; gap: 3%;">
+            <img src="img/gota edit.png" style="width: 100%;" alt="logo">
+        </a>
+
+        <div style="display: flex; flex-direction: row-reverse; width: 60%;">
+            <a href="Apoiadores.html" style="border-style: none solid none solid;" class="botoes_nav">Apoiadores</a>
+            <a href="Contatos.html" class="botoes_nav">Suporte</a>
+            <a href="Mitos.html" class="botoes_nav">Mitos</a>
+            <a href="Triagem.html" class="botoes_nav">Agendar</a>
+        </div>
+        
+        <div style="width: 10%; display: flex; flex-direction: row-reverse;">
+            <a style="display: flex; align-items: center;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Cadastro.html">Login/Cadastro</a>
+              <a class="dropdown-item" href="Historico.html">Historico de Doações</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="triagem">
+        <h1>Você está prestes a salvar 4 vidas!</h1>
+        <p>Por favor, responda as perguntas da triagem para prosseguir</p>
+        <form id="binaryForm">
+            <div class="form-group">
+                <div class="option-label">Doou sangue há menos de 2 meses?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option1" value="sim"> Sim</label>
+                    <label><input type="radio" name="option1" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="option-label">Fez procedimento dentário ou limpeza com anestesia local há menos de 3 dias?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option2" value="sim"> Sim</label>
+                    <label><input type="radio" name="option2" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="option-label">Fez exame / procedimento endoscópico há menos de 6 meses?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option3" value="sim"> Sim</label>
+                    <label><input type="radio" name="option3" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="option-label">Teve infecção pelo SARS COV-2 há menos de 10 dias?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option4" value="sim"> Sim</label>
+                    <label><input type="radio" name="option4" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="option-label">Fez acupuntura em procedimento não seguro há menos de 06 meses?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option5" value="sim"> Sim</label>
+                    <label><input type="radio" name="option5" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="option-label">Teve hepatite ou icterícia após 11 anos de idade?</div>
+                <div class="option-inputs">
+                    <label><input type="radio" name="option6" value="sim"> Sim</label>
+                    <label><input type="radio" name="option6" value="nao"> Não</label>
+                </div>
+            </div>
+            <div class="confirm-group">
+                <input type="checkbox" id="confirmCheckbox">
+                <label for="confirmCheckbox">Declaro que as respostas fornecidas acima são verdadeiras</label>
+            </div>
+            <button type="submit">Agendar Doação</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <div style="width: 90%;">
+          <h1 style="color: white;">CONEXSP</h1>
+          <div class="div_a">
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Apoiadores
+            </a>
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Noticias sobre doação
+            </a>
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Benefícios
+            </a>
+          </div>
+          <div style="border-style: none;" class="div_a">
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Quero fazer uma doação!
+            </a>
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Meios de contato
+            </a>
+            <a href="" style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+              Perguntas frequentes
+            </a>
+          </div>
+        </div>
+        
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/triagem.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+
+  --body-color:#FFFCFF ;
+
+  --header-color:#d36c6c;
+
+  --header-button:#92a1d1;
+
+  --color-weekdays: #247BA0;
+  
+  --box-shadow: #CBD4C2;
+
+  --hover: #e8faed;
+
+  --current-day:#e8f4fa;
+
+  --event-color: #58bae4;
+
+  --modal-event: #e8f4fa;
+
+
+ --color-day:white;
+
+ font-family: roboto;
+  
+}
+
+main h1{
+  color: #BB2029;
+  margin: 0;
+  margin-bottom: 7%;
+}
+
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: white;
+}
+
+#header {
+  padding: 2%;
+  font-size: 200%;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  font-size: 32px;
+}
+#calendario {
+  transform: scale(0.4);
+  width: 770px;
+  margin: -31.55%;
+  margin-top: -57%;
+  margin-bottom: -55%;
+  margin-left: -53%;
+  margin-right: -50%;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+}
+#weekdays div {
+  text-align: center;
+  width: 14.3%;
+  padding: 10px;
+  font-size: 24px;
+}
+#calendar {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 97.5px;
+  padding: 1%;
+  height: 97.5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: var(--color-day);
+  margin: 5px;
+  box-shadow: 0px 0px 3px var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
+  font-weight: 700;
+  color: rgb(0, 81, 221);
+  font-size: 32px;
+}
+.day:hover {
+  background-color: rgb(177, 206, 255);
+}
+
+.day + #currentDay {
+  background-color:var(--current-day);
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: var(--event-color);
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: var(--body-color) !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: var(--modal-event);
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: var(--header-color);
+}
+#saveButton, #closeButton {
+  background-color: var(--header-button);
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+.lado_esquerdo{
+  width: 100%;
+  height: 350px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.conjunto_botoes{
+  display: flex;
+  width: 25%;
+  height: auto;
+  gap: 3%;
+}
+.conjunto_botoes button{
+  width: 100%;
+  padding: 9%;
+  background-color: white;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(132, 177, 255);
+  color: rgb(0, 81, 221);
+  font-weight: 700;
+  box-shadow: none;
+}

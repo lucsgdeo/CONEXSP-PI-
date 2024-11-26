@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: aliceblue;">
+  <header class="navbar1">
+    <a href="index.html" style="width: 20%; display: flex; flex-direction: row; align-items: center; gap: 3%;">
+      <img src="img/gota edit.png" style="width: 100%;" alt="logo">
+    </a>
+
+    <div style="display: flex; flex-direction: row-reverse; width: 60%;">
+      <a href="Apoiadores.html" style="border-style: none solid none solid;" class="botoes_nav">Apoiadores</a>
+      <a href="Contatos.html" class="botoes_nav">Suporte</a>
+      <a href="Mitos.html" class="botoes_nav">Mitos</a>
+      <a href="Triagem.html" class="botoes_nav">Agendar</a>
+    </div>
+
+    <div style="width: 10%; display: flex; flex-direction: row-reverse;">
+      <a style="display: flex; align-items: center;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i style="font-size: 250%; color: white;" class="fa-regular fa-user"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="Cadastro.html">Login/Cadastro</a>
+        <a class="dropdown-item" href="Historico.html">Historico de Doações</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="principal_home">
+    <!--CARROSSEL-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/Banner.png" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/doacao-de-sangue.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/doar-sangue-1.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <!--LOCAIS PARA DOACAO-->
+    <div class="locais_doacao">
+      <div style="width: 50%; display: flex; flex-direction: column; text-align: center; padding: 5%;">
+        <h3>Locais para Doação</h3>
+        <p style="font-weight: 600; margin-top: 5%;">
+          O agendamento é 100% seguro e eficiente! Primeiro você escolhe a unidade mais próxima, 
+          passa pelo nosso sistema de triagem eletrônica, escolha a data disponível e pronto! :)
+        </p>
+      </div>
+
+      <div style="width: fit-content; padding: 5%; display: flex; flex-direction: column; align-items: center;">
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.313606745895!2d-46.65507983151243!3d-23.557177686295105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cba16aab73%3A0xc507935c3fc44731!2sHospital%20S%C3%ADrio-Liban%C3%AAs%20%7C%20Bela%20Vista!5e0!3m2!1spt-BR!2sbr!4v1718240863175!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          alt="mapa">
+        </div>
+
+  
+      </div>
+    </div>
+
+    <!--BANCO DE SANGUE-->
+    <div class="banco_sangue">
+      <h5>Banco de sangue convêniado</h5>
+      <div style="width: 90%; display: flex; justify-content: space-between; text-align: center;">
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/estavel.png" alt="estavel">
+          <p>A+</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/critico.png" alt="critico">
+          <p>A-</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/estavel.png" alt="estavel">
+          <p>B+</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/alerta.png" alt="alerta">
+          <p>B-</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/estavel.png" alt="estavel">
+          <p>AB+</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/alerta.png" alt="alerta">
+          <p>AB-</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/critico.png" alt="critico">
+          <p>O+</p>
+        </div>
+        <div class="boleta_sangue boleta_sangue_edit">
+          <img src="img/alerta.png" alt="alerta">
+          <p>O-</p>
+        </div>
+      </div>
+
+      <div style="width: 90%; display: flex; flex-direction: row; justify-content: space-around; text-align: center;">
+        <div class="boleta_sangue">
+          <!--<span class="boleta"></span>-->
+          <img style="max-width: 55%;" src="img/estavel.png" alt="">
+          <p>Estável</p>
+        </div>
+        <div class="boleta_sangue">
+          <img style="max-width: 55%;" src="img/alerta.png" alt="">
+          <p>Alerta</p>
+        </div>
+        <div class="boleta_sangue">
+          <img style="max-width: 55%;" src="img/critico.png" alt="">
+          <p>Crítico</p>
+        </div>
+      </div>
+    </div>
+    <a style="align-self: center;" href="Triagem.html">
+      <button style="background-color: #D33741; margin-top: 3%; width: 200px; align-self: center;" class="botoes">
+        Agendar Doação
+      </button>
+    </a>
+
+    <!--CARDS EM CARROSSEL-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active extra_padding">
+          <div class="banco_sangue card_carrossel">
+            <span style="width: 150px; height: 150px;" class="boleta"></span>
+            <div style="width: 70%; display: flex; flex-direction: column;">
+              <h1>Gabriel Oliveira da Silva</h1>
+              <p>Eu fui um dos primeiros a utilizar o CONEXSP. Realizei uma doação de plaquetas. A agilidade em
+                comparação com outros sistemas é realmente gritante!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item extra_padding">
+          <div class="banco_sangue card_carrossel">
+            <span style="width: 150px; height: 150px;" class="boleta"></span>
+            <div style="width: 70%; display: flex; flex-direction: column;">
+              <h1>Matheus Domingues Nunes</h1>
+              <p>Eu fico muito feliz de contribuir para uma causa tão nobre! Em busca de mais 4 "obrigados" :)!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item extra_padding">
+          <div class="banco_sangue card_carrossel">
+            <span style="width: 150px; height: 150px;" class="boleta"></span>
+            <div style="width: 70%; display: flex; flex-direction: column;">
+              <h1>Brenno Ribeiro da Silva</h1>
+              <p>Já fiz diversas doações utilizando o CONEXSP, ele é um dos melhores sistemas para doação de sangue!!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#"
+      style="z-index: 1; text-align: center; width: 30%; padding: 0.75%; border-radius: 32px; background-color: #284F60; color: white; border-style: none; align-self: flex-end; margin: 10%; margin-top: -3%;">
+      Quero me cadastrar como instituição
+    </a>
+
+    <!--PATROCINADORES-->
+    <div class="patrocinadores">
+      <div class="card_patrocinador">
+        <img src="img/logos/unimed.png" class="imagem_div" alt="unimed">
+      </div>
+      <div class="card_patrocinador">
+        <img src="img/logos/amil.png" class="imagem_div" alt="unimed">
+      </div>
+      <div class="card_patrocinador">
+        <img src="img/logos/SulAmerica.png" class="imagem_div" alt="unimed">
+      </div>
+      <div class="card_patrocinador">
+        <img src="img/logos/saocamilo.png" class="imagem_div" alt="unimed">
+      </div>
+      <div class="card_patrocinador">
+        <img src="img/logos/allianz.png" class="imagem_div" alt="unimed">
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div style="width: 90%;">
+        <h1>CONEXSP</h1>
+        <div class="div_a">
+          <a href="Apoiadores.html"
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Apoiadores
+          </a>
+          <a href=""
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Noticias sobre doação
+          </a>
+          <a href=""
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Benefícios
+          </a>
+        </div>
+        <div style="border-style: none;" class="div_a">
+          <a href="Triagem.html"
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Quero fazer uma doação!
+          </a>
+          <a href="Contatos.html"
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Meios de contato
+          </a>
+          <a href="Contatos.html"
+            style="border-style: none none none solid; border-width: 1px; padding-left: 1%; width: 33%; color: white;">
+            Perguntas frequentes
+          </a>
+        </div>
+      </div>
+
+
+    </footer>
+
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.doadores {
+    text-align: center;
+    background-color: #C2E0E0;
+    padding: 20px 0;
+    color: #284F60;
+}
+
+.doadores h2 {
+    margin: 0;
+    color: #284F60;
+}
+
+.doador {
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    align-items: center;
+}
+
+.doador img {
+    max-width: 100%;
+    max-height: 780px;
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.doador-info {
+    flex: 1;
+    font-size: 1.2em;
+    color: #284F60;
+}
+
+.doador-info h3 {
+    margin-top: 0;
+    color: #284F60;
+}
+
+.juntos {
+    text-align: center;
+    padding: 20px 0;
+    color: #284F60;
+}
+
+.juntos h2 {
+    margin: 0;
+    color: #284F60;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.button-container {
+    text-align: center;
+    width: 45%;
+    background-color: #C2E0E0; /* Fundo similar ao da imagem */
+    padding: 30px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+}
+
+.button-container2 {
+    text-align: center;
+    width: 45%;
+    background-color: #D33741; /* Fundo similar ao da imagem */
+    padding: 30px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+
+}
+
+.button-container p {
+    margin-bottom: 40px;
+    color: #284F60;
+}
+
+.button-container2 p {
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+
+.button {
+    background-color: #D33741;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.button.red {
+    background-color: #284F60;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.separator {
+    border: 0;
+    height: 7px;
+    background: #346F88;
+    margin: 40px 0;
+}

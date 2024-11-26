@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #D5343F;
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    color: white;
+    background-color: #D33741;
+    width: 30%;
+    border-radius: 56px;
+    border-style: none;
+    padding: 1%;
+    margin-top: 1%;
+    margin-right: 10%;
+    align-self: flex-end;
+    font-size: 18px;
+}
+
+.navbar1{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: rgba(189, 28, 38, 0);
+    background-image:url("/img/fundo navbar.png");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-color: #D33741;
+    width: 100%;
+    z-index: 1;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.botoes_nav{
+    text-align: center;
+    width: 15%;
+    border-style: none none none solid;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+}
+.botoes_nav:hover{
+    color: white;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 175%;
+    background-color: #C2E0E0;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    margin-top: 7.5%;
+}
+.cabecalho h1 {
+    margin: 0;
+    padding: 0;
+    color: #284F60;
+}
+.cabecalho p {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    color: #284F60;
+}
+
+.area_historico{
+    align-self: center;
+    margin-top: 7%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.area_historico div{
+    width: 100%;
+    display: flex;
+}
+.parte_azul div{
+    background-color: #6D85A9;
+    color: white;
+    padding: 1%;
+    width: 20%;
+}
+.parte_vermelha div{
+    background-color: #BF2E36;
+    color: white;
+    padding: 1%;
+    width: 20%;
+}
+
+.div_central{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-self: center;
+    width: 45%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    border-radius: 56px;
+    background-color: #C2E0E0;
+    color: #284F60;
+}
+
+.footer{
+    width: 100%;
+    padding: 3%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+.div_footer{
+    padding: 1%; 
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.div_a{
+    display: flex; 
+    justify-content: space-between;
+    border-style: none none solid none;
+    border-color: white;
+    padding: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-width: 1px;
+}

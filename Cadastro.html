@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="img_fundo" onload="carregaDados()">
+    
+    <main class="principal">
+        
+        <div class="leva_login">
+            <img width="30%" src="img/mao_gota_circulo.png" alt="">
+            <h2>Bem-vindo novamente!</h2>
+            <p>Já possui uma conta?<br>
+                Acesse-a agora mesmo</p>
+            <a href="Login.html"><button style="margin-top: 10%" class="botoes">Entrar</button></a>
+        </div>
+
+        <div class="area_cadastro">
+            
+            <div style="text-align: center; display: flex; flex-direction: column;">
+                <h2 style="margin: 0px; color: brown;">Crie sua conta</h2>
+                <p style="margin: 0px; margin-top: 5%;">Preencha com os seus dados</p>
+            </div>
+
+            <!-- NOME CPF EMAIL ETC -->
+            <div class="formulario">
+                <div style = "display:flex; flex-direction: row; gap: 1%;">
+                    <input type="text" placeholder="Nome" style="width: 61.2%;" class="input_texto" id="nome">
+                    <input type="text" placeholder="CPF" style="width: 35.5%;" class="input_texto" id="cpf">
+                </div>
+                <div style="margin-top: 1%; margin-bottom: 1%;">
+                    <input type="text" placeholder="E-mail" style="width:100%; box-sizing: border-box;" class="input_texto" id="email">
+                </div>
+                <div style = "display:flex; flex-direction: row; gap: 1%;">
+                    <input type="text" placeholder="Endereço" style="width: 61.2%;" class="input_texto" id="endereco">
+                    <input type="text" placeholder="CEP" style="width: 35.5%;" class="input_texto" id="cep">
+                </div>
+            </div>
+
+            <!-- TIPO SANGUINHEO -->
+            <div class="formulario">
+                Selecione seu tipo sanguíneo:
+                <div style="display: flex; justify-content: space-between; align-content: center; text-align: center;">
+                    <div>
+                        <label for="A+">A+</label>
+                        <input type="radio" id="A+" name="tipo_sanguineo" value="A+" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="A-">A-</label>
+                        <input type="radio" id="A-" name="tipo_sanguineo" value="A-" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="B+">B+</label>
+                        <input type="radio" id="B+" name="tipo_sanguineo" value="B+" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="B-">B-</label>
+                        <input type="radio" id="B-" name="tipo_sanguineo" value="B-" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="AB+">AB+</label>
+                        <input type="radio" id="AB+" name="tipo_sanguineo" value="AB+" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="AB-">AB-</label>
+                        <input type="radio" id="AB-" name="tipo_sanguineo" value="AB-" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="O+">O+</label>
+                        <input type="radio" id="O+" name="tipo_sanguineo" value="O+" style="margin-left: -0.5%;">
+                    </div>
+                    <div>
+                        <label for="O-">O-</label>
+                        <input type="radio" id="O-" name="tipo_sanguineo" value="O-" style="margin-left: -0.5%;">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- SENHA -->
+            <div class="formulario">
+                <div style = "display:flex; flex-direction: row; gap: 1%;">
+                    <input type="text" placeholder="Senha" style="width: 47.85%;" class="input_texto" id="senha">
+                    <input type="text" placeholder="Confirmar senha" style="width: 47.85%; margin-left: 1%;" class="input_texto" id="confirmasenha">
+                </div>
+                <p>Use oito ou mais caracteres com uma combinação de letras, números e símbolos.</p>
+            </div>
+            
+            <button style="margin-top: 5%; border-color: rgb(164, 8, 17);" class="botoes" onclick="cadastra()">Cadastrar</button>
+        </div>
+        
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
